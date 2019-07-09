@@ -1,0 +1,10 @@
+1. 域名解析到指定路由器外网ip
+
+2. 创建用户https://ram.console.aliyun.com ,
+   授权AliyunDNSFullAccess, 创建用户accessKeyId 和accessKeySecret
+   
+3. 修改application-dev中的配置
+
+4. mvn clean install package -D maven.test.skip=true
+
+5. 进入target目录, java -jar  alidns-scheduler-1.0.0.jar
